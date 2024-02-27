@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(129, 221, 221);
+}
+
+#simon-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 10px solid black;
+  border-radius: 50%;
+}
+
+.simon-button {
+  width: 50%;
+  height: 50%;
+  opacity: 0.8;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+#start-button {
+  display: block;
+  margin: 20px auto;
+}
+
+#level-display {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.bright {
+  filter: brightness(10%);
+}
+
+.panel:hover {
+  transition: transform 0.5s ease-in;
+  transform: scale(1.1);
+}
+
+#start-btn {
+  transition: 0.5s;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: rgb(47, 180, 197);
+  color: black;
+  border: none;
+  outline: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 2px gray, -2px -2x 1px gray, -2px 2px 1px gray,
+    2px -2px 1px gray;
+}
+
+#start-btn:hover {
+  transform: scale(1.1);
+}
+
+#score,
+#level {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+#score:hover,
+#level:hover {
+  cursor: default;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  width: 100%;
+  background: rgb(128, 226, 226);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.heading {
+  position: relative;
+  width: fit-content;
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  padding: 0px 1.5rem;
+}
+
+.heading::before {
+  content: "";
+  width: 100px;
+  position: absolute;
+  padding-bottom: 0.3rem;
+  width: 0;
+  bottom: 0%;
+  left: 0;
+  border-bottom: 3px solid black;
+  transition: 0.4s linear;
+}
+
+.heading:hover:before {
+  width: 100%;
+}

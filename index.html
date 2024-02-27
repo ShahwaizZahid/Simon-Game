@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Simom Game</title>
+</head>
+<body>
+  <div class="container">
+    <header class="heading">Simon Game</header>
+  </div>
+  <div id="simon-board">
+    <div class="simon-button panel red" onclick="this.playerInput"></div>
+    <div class="simon-button panel green" onclick="this.playerInput"></div>
+    <div class="simon-button panel blue" onclick="this.playerInput"></div>
+    <div class="simon-button panel yellow" onclick="this.playerInput"></div>
+  </div>
+
+  <div class="control">
+    <button id="start-btn">Start</button>
+    <div id="score"><span>Score:</span><span class="Score-count">0</span></div>
+    <div id="level"><span>Level:</span><span class="Level-count">1</span></div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
