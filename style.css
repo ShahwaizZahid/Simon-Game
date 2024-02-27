@@ -5,6 +5,8 @@
 }
 
 body {
+  width: 100%;
+  height: 100vh;
   background: rgb(129, 221, 221);
 }
 
@@ -13,8 +15,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   margin: 0 auto;
   border: 10px solid black;
   border-radius: 50%;
@@ -107,6 +109,7 @@ body {
 }
 
 .container {
+  margin: 2rem ;
   position: relative;
   display: flex;
   justify-content: center;
@@ -118,7 +121,7 @@ body {
   position: relative;
   width: fit-content;
   color: black;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   border-left: 3px solid black;
   border-right: 3px solid black;
